@@ -31,27 +31,32 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social
 
   return (
-    <div className="bio">
-      <StaticImage
-        className="bio-avatar"
-        layout="fixed"
-        formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.png"
-        width={50}
-        height={50}
-        quality={95}
-        alt="Profile picture"
-      />
-      {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
-        </p>
-      )}
-    </div>
+      <div className="bio">
+        <StaticImage
+          className="bio-avatar"
+          layout="fixed"
+          formats={["auto", "webp", "avif"]}
+          src="../images/sip.jpeg"
+          width={80}
+          height={80}
+          quality={95}
+          alt="Profile picture"
+        />
+
+        {author?.name && (
+          <p style={{ "padding-top": "10px" }}>
+            {/* Thoughts & notes by <strong>{author.name}</strong>
+          <br /> */}
+            Computer engineering survivor writing about{" "}
+            <b>tech, adulting and personal development</b>.
+            {/* {author?.summary || null} */}
+            {/* {` `} */}
+            {/* <a href={`https://twitter.com/${social?.twitter || ``}`}>
+            Find me on Twitter
+          </a> */}
+          </p>
+        )}
+      </div>
   )
 }
 

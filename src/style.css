@@ -34,7 +34,7 @@
   --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
   --font-body: var(--fontFamily-serif);
-  --font-heading: var(--fontFamily-sans);
+  --font-heading: var(--fontFamily-serif);
   --fontWeight-normal: 400;
   --fontWeight-bold: 700;
   --fontWeight-black: 900;
@@ -52,12 +52,13 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
-  --color-text: #2e353f;
-  --color-text-light: #4f5969;
-  --color-heading: #1a202c;
-  --color-heading-black: black;
+  --color-primary: #81A1C1;
+  --color-text: #ECEFF4;
+  --color-text-light: #acb1b9;
+  --color-heading: #81A1C1;
+  --color-heading-black: #5E81AC;
   --color-accent: #d1dce5;
+  --color-background: #2E3440;
 }
 
 /* HTML elements */
@@ -73,6 +74,7 @@ html {
   font-size: var(--fontSize-root);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
 }
 
 body {
@@ -296,7 +298,7 @@ a:focus {
 .bio-avatar {
   margin-right: var(--spacing-4);
   margin-bottom: var(--spacing-0);
-  min-width: 50px;
+  min-width: 80px;
   border-radius: 100%;
 }
 
@@ -315,6 +317,17 @@ a:focus {
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
+}
+
+.contact {
+  width: 1.5em;
+  height: 1.5em;
+  color: var(--color-accent);
+  margin-right: 0.8em;
+}
+
+.contact-wrapper {
+  color: var(--color-accent);
 }
 
 /* Media queries */
